@@ -77,5 +77,87 @@ div.accordion-content.active {
     display: block;
     opacity: 1;
 }
-
 /* Accordion Stuff END */
+
+
+
+/* Card Stuff START */
+
+div.card-holder-3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+div.card-small{
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+img.card-image-small{
+    width: 100%;
+}
+div.card-content-small{
+    text-align: center;
+}
+
+div.card-medium{
+    display: block;
+    max-width: 400px;
+    max-height: 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+img.card-image-medium{
+    width: 100%;
+}
+div.card-content-medium{
+    text-align: center;
+}
+
+
+div.card-large{
+    display: block;
+    max-width: 600px;
+    max-height: 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+img.card-image-large{
+    width: 100%;
+}
+div.card-content-large{
+    text-align: center;
+}
+
+
+
+/* Card Stuff END */
+
+
+
+/* Quick Options START */
+.m10{
+    margin: 10px;
+}
+.m5{
+    margin: 5px;
+}
+.m3{
+    margin: 3px;
+}
+.p10{
+    padding: 10px;
+}
+.p5{
+    padding: 5px;
+}
+.p3{
+    padding: 3px;
+}
+/* Quick Options END*/
