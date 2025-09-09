@@ -1,0 +1,44 @@
+.fluid-img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.no-padding{
+    padding: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.hero-div{
+    /* Pentru a putea folosi position: absolute pe text ca sa il pozitionam in functie de unde se afla imaginea, trebuie sa am position relative pe div
+    */
+    position: relative;
+}
+.hero-text-center{
+    position: absolute;
+    top: 50%;
+    /* right: 50%;  */
+    width: 100%;
+    text-align: center;
+    font-size: 160px;
+}
+div.nav-bar-fixed{
+    position: fixed;
+
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 90%;             /* take 90% of screen width */
+    max-width: 1400px;      /* optional: don’t stretch too much */
+    height: 60px;
+
+    background:linear-gradient(45deg,#fdfdfc,#949881);
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* makes it pop */
+    z-index: 1000;
+}
