@@ -21,11 +21,21 @@
 }
 .hero-text-center{
     position: absolute;
-    top: 50%;
+    top: 35%;
     /* right: 50%;  */
     width: 100%;
     text-align: center;
-    font-size: 160px;
+    font-size: clamp(24px,8vw,100px);
+    color: #2c3e50;
+}
+.hero-impressive-text{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(24px,4vw,45px);
+    color: rgb(3, 61, 112);
+    opacity: 1;
 }
 /* HERO END*/
 
@@ -42,8 +52,8 @@ div.nav-bar-fixed{
     max-width: 1400px;      /* optional: don’t stretch too much */
     height: 60px;
 
-    background:linear-gradient(45deg,#fdfdfc,#949881);
-    border: 3px solid red;
+    background:linear-gradient(45deg,#7eb8c9,#d0dde8);
+    border: 3px solid #a4a190;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* makes it pop */
     z-index: 1000;
@@ -54,11 +64,13 @@ div.nav-bar-fixed{
 button.accordion-button {
     cursor: pointer;
     padding: 15px;
-    border: none;
+    border: 3px solid black;
+    border-radius: 10px;
     outline: none;
-    background: #2ecc71;
+    background: #89a287;
     color: white;
     font-weight: bold;
+    font-size: clamp(18px,4vw,30px);
     transition: background 1s;
 }
 
@@ -69,6 +81,9 @@ button.accordion-button:hover {
 div.accordion-content {
     display: none;
     padding: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 10px;
     background: #f0f0f0;
     opacity: 0;
 }
@@ -77,6 +92,29 @@ div.accordion-content.active {
     display: block;
     opacity: 1;
 }
+
+
+div.accordion-container { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.accordion-container > div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.accordion-container > li {
+    padding-left: 5px;
+}
+
+.accordion-content > ul {
+    font-size: clamp(12px,8vw,30px);
+}
+
+
 /* Accordion Stuff END */
 
 
@@ -135,9 +173,14 @@ div.card-content-large{
     text-align: center;
 }
 
-
-
 /* Card Stuff END */
+
+
+
+
+
+
+
 
 
 
@@ -159,5 +202,8 @@ div.card-content-large{
 }
 .p3{
     padding: 3px;
+}
+.fluid-text{
+    font-size: clamp(24px,8vw,100px);
 }
 /* Quick Options END*/
